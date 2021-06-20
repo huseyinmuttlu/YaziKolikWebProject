@@ -1,0 +1,97 @@
+/*Apple firmasının kullandığı fontların tanımlanması*/
+@font-face {
+    font-family:"SF-Text-Regular" ;
+    src: url(../fonts/SFProText-Regular.ttf);
+}
+@font-face {
+    font-family:"SF-Display-Medium" ;
+    src: url(../fonts/SFProDisplay-Medium.ttf);
+}
+@font-face {
+    font-family:"SF-Text-Semibold" ;
+    src: url(../fonts/SFProText-Semibold.ttf);
+}
+/*Tarayıcılar için number isimli input'un oklarını kaldırmak için gereken css*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*Register Formu için Responsive Ayarı*/
+@media screen and (min-width: 1200px) {
+    #registerform{
+        width: 30%;
+    }
+  }
+@media screen and (max-width: 1200px) {
+    #registerform{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 900px) {
+      #registerform{
+          width: 50%;
+      }
+  }
+@media screen and (max-width: 720px) {
+    #registerform{
+        width: 75%;
+    }
+}
+
+#adet:focus{
+    outline: none;
+}
+.shadow-items:hover,#registerform:hover,#loginform:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.3); 
+}
+body{
+    font-family:"SF-Display-Medium";
+}
+.category-item{
+    color:white !important;
+    font-size:medium;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    cursor:pointer;
+}
+
+.nav-1:hover{
+    background-color:#FA7921 ;
+}
+.nav-2:hover{
+    background-color:#C3083F ;
+}
+.nav-3:hover{
+    background-color:#F78888 ;
+}
+.nav-4:hover{
+    background-color:#FFBF00 ;
+}
+.nav-5:hover{
+    background-color:#812BB2 ;
+}
+.footer-link{
+    color:slategray;
+    text-decoration: none;
+}
+.footer-link:hover{
+    color:slategray;
+    text-decoration: underline;
+}
+.bookDetail{
+    color:#1E4D96;
+}
+.cart-item-attr{
+    color:#1E4D96;
+    font-size: large;
+    font-weight:600;
+}
+.product-attr{
+    color:#53acb2;
+}
